@@ -19,19 +19,7 @@ class Codigofacilito extends CI_Controller {
 		$this->load->view('codigofacilito/bienvenido');
 	}
 
-	function nuevo(){
-		$this->load->view('codigofacilito/headers');
-		$this->load->view('codigofacilito/formulario');
-	}
-	function recibirDatos(){
-		$data = array(
-			'nombre' => $this->input->post('nombre'),
-			'videos' => $this->input->post('videos')
-			);
-		$this->codigofacilito_model->crearCurso($data);
-		$this->load->view('codigofacilito/headers');
-		$this->load->view('codigofacilito/bienvenido');
-	}
+	
 
 }
 ?>
