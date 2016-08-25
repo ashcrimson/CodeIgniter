@@ -1,3 +1,4 @@
+<h1>HOLA</h1>
 <?
 	if($cursos){
 	foreach ($cursos->result() as $curso) { ?>
