@@ -33,7 +33,7 @@ class Cursos extends CI_Controller {
 		$this->load->view('codigofacilito/bienvenido');
 	}
 	function editar(){
-		$data['id'] = $this->url->segment(3);
+		$data['id'] = $this->uri->segment(3);
 		$data['curso'] = $this->codigofacilito_model->obtenerCurso($data['id']);
 		$this->load->view('codigofacilito/headers');
 		$this->load->view('cursos/editar',$data);
