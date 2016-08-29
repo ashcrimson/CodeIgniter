@@ -1,4 +1,4 @@
-<?= form_open("/cursos/actualizar<?= $id?>") ?>
+<?= form_open("/cursos/actualizar/" .$id) ?>
 <?
 	$nombre = array(
 		'name' => 'nombre',

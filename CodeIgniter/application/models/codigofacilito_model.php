@@ -28,5 +28,9 @@ class Codigofacilito_model extends CI_Model {
 		$this->db->where('idCurso',$id);
 		$query = $this->db->update('cursos',$datos);
 	}
+	function eliminarCurso($id){
+		$query = "DELETE FROM cursos WHERE idCurso = $id";
+		$this->db->query($query);
+	}
 }
 ?>
